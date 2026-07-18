@@ -1,7 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const test = "test TypeScript";
-console.log(test);
 // data types  => type annotations or signature
 // string, number, boolean and any if type is not known
 let theName = "ahmed gouda";
@@ -47,4 +43,5 @@ const addNums = function (...nums) {
 console.log(addNums(3, 4, 5.5, +true));
 const addNumsArrow = (n1, n2) => n1 + n2;
 console.log(addNumsArrow(1, 2));
-//# sourceMappingURL=index.js.map
+export {};
+//# sourceMappingURL=annotation.js.map

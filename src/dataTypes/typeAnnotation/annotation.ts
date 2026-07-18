@@ -1,6 +1,3 @@
-const test = "test TypeScript";
-console.log(test);
-
 // data types  => type annotations or signature
 // string, number, boolean and any if type is not known
 
