@@ -5,7 +5,7 @@ title = "Front End";
 let experince = "expert";
 experince = 10; // worked
 function getMoves(moves) {
-  console.log(`you can go ${moves.go} by ${moves.steps} steps at once`);
+    console.log(`you can go ${moves.go} by ${moves.steps} steps at once`);
 }
 getMoves({ go: "forward", steps: 10 });
 export {};
