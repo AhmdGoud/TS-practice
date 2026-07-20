@@ -54,3 +54,26 @@ console.log(addNums(3, 4, 5.5, +true));
 
 const addNumsArrow = (n1: number, n2: number): number => n1 + n2;
 console.log(addNumsArrow(1, 2));
+
+// type annotation for objects
+const about: {
+  userName: string;
+  readonly experience: number;
+  isHired?: boolean;
+  // we added ? after isHired to make it optional
+  skills: {
+    one: string;
+    two: string;
+  };
+} = {
+  userName: "ahmed gouda",
+  experience: 1,
+  isHired: false, // so we have the choice to write it or not
+  skills: {
+    one: "HTML",
+    two: "CSS",
+  },
+};
+
+// about.experience = 2; // error
+// we prevented this by makeing it readonly else we could edit it
