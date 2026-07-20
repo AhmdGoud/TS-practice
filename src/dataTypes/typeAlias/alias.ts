@@ -15,7 +15,18 @@ type Actions = {
   steps: number;
 };
 
-function getMoves(moves: Actions) {
-  console.log(`you can go ${moves.go} by ${moves.steps} steps at once`);
+type MoreActions = Actions & {
+  stops: number;
+};
+
+// we did kinda of extending the Actions type by using type intersection
+// & is for intersection type it works as AND
+// | is for union type it works like OR
+
+function getMoves(moves: MoreActions) {
+  console.log(
+    `you can go ${moves.go} by ${moves.steps} steps at once and stop for ${moves.stops}`,
+  );
 }
-getMoves({ go: "forward", steps: 10 });
+
+getMoves({ go: "forward", steps: 10, stops: 5 });
